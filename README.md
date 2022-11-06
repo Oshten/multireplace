@@ -40,18 +40,20 @@ The method returns a new string, but does not edit the original string.
 To save a new string, you must assign the result of the method execution to a variable.
 3) After multiple replace, you can use all original methods for string.
 
-
 ```Python
-import multireplace
 
-same_str = NewString("I'll be back").multireplace(replacement_sumbols=['I', "'", 'll', 'k'], new_sumbols=['We', ' ', 'will', 'k!'])
+from multireplace import multireplace
+
+same_str = NewString("I'll be back").multireplace(replacement_sumbols=['I', "'", 'll', 'k'],
+                                                  new_sumbols=['We', ' ', 'will', 'k!'])
 ```
 
 You can also use the method `multireplace` to remove multiple characters from a string. 
 To do this, specify the characters to be removed in the parameter `replacement_sumbols`
 
 ```Python
-import multireplace
+
+from multireplace import multireplace
 
 same_str = NewString("I'll be back").multireplace(replacement_sumbols=[' ', 'be', 'back'])
 ```
