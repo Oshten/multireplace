@@ -9,6 +9,7 @@ class NewString(str):
         Single replacement and new characters are objects that are
         single words, parts of words, letters, special characters,
         or combinations thereof, enclosed in string literals.
+gi
 
         There are three ways to specify replacement and new characters:
         1)  Replaced and new characters are grouped into lists or tuples of the same length.
@@ -71,3 +72,5 @@ class NewString(str):
                     continue
                 index += 1
         return self
+
+
