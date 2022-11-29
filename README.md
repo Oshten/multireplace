@@ -44,7 +44,7 @@ To save a new string, you must assign the result of the method execution to a va
 
 from multireplace import multireplace
 
-same_str = NewString("I'll be back").multireplace(replacement_sumbols=['I', "'", 'll', 'k'],
+same_str = multireplace.NewString("I'll be back").multireplace(replacement_sumbols=['I', "'", 'll', 'k'],
                                                   new_sumbols=['We', ' ', 'will', 'k!'])
 ```
 
@@ -55,5 +55,5 @@ To do this, specify the characters to be removed in the parameter `replacement_s
 
 from multireplace import multireplace
 
-same_str = NewString("I'll be back").multireplace(replacement_sumbols=[' ', 'be', 'back'])
+same_str = multireplace.NewString("I'll be back").multireplace(replacement_sumbols=[' ', 'be', 'back'])
 ```
